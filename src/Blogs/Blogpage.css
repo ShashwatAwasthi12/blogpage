@@ -1,0 +1,98 @@
+.my-blog{
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.Blog-title{
+    font-size: 8rem;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 2px;
+}
+
+.top-pic{
+    top: 6rem;
+    position: absolute;
+    height: 500px;
+    width: 80vw;
+    z-index: -1;
+}
+
+.my-blog > span{
+    font-size: 3rem;
+    color: rgb(51, 50, 50);
+    font-family: 'Odibee Sans', cursive;
+    position: relative;
+    top: 16rem;
+}
+
+.blog-post{
+    display: flex;
+    width: inherit;
+    margin-top: 25rem;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.post{
+    margin: 20px;
+    width: 40rem;
+    cursor: pointer;
+}
+
+.postTitle{
+    font-weight: bolder;
+    margin-bottom:10px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.postDesc > p{
+    padding-left: 2rem;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+} 
+
+.postImg{
+    height: 20rem;
+    width: 30rem;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .postImg{
+        height: 15rem;
+        width: 15rem;
+        border-radius: 1rem;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+    .blog-post{
+        display: block;
+        width: inherit;
+        margin-top: 25rem;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .post{
+        margin: 20px;
+        width: 40rem;
+        cursor: pointer;
+        align-items: center ;
+    }
+
+    .my-blog > span{
+        
+        font-size: 2.5rem;
+    }
+}
